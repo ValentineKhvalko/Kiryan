@@ -72,7 +72,12 @@ body {
   border-radius: 3px;
   color: #3B3A4A;
   overflow: hidden;
-  flex: 0 0 800px;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+
+.letterInfo {
+  display: flex;
 }
 
 .imgInfo {
