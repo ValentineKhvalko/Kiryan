@@ -25,6 +25,10 @@ body {
 
 .lettersPage {
   padding: 5px 10px; 
+  border-bottom: solid 7px #F4F7FC; 
+}
+
+.choosedPage {
   font-weight: bold;
   border-bottom: solid 7px #7D90B2;
 }
