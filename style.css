@@ -19,14 +19,18 @@ body {
 }
 
 .blocksPage {
-  font-weight: bold;
-  border-bottom: solid 7px #7D90B2;
+  border-bottom: solid 7px #F4F7FC;
   padding: 5px 10px 5px 0; 
 }
 
 .lettersPage {
   border-bottom: solid 7px #F4F7FC;
   padding: 5px 10px; 
+}
+
+.choosedPage {
+  font-weight: bold;
+  border-bottom: solid 7px #7D90B2;
 }
 
 .borderBottomToolbar {
