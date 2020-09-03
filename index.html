@@ -7,51 +7,104 @@
   <title>Document</title>
 </head>
 <body>
-  <div class='blockPageContainer'>
-    <div class='toolbar'> 
-      <span class='blocksPage'>Блоки</span>
-      <span class='lettersPage'>Письма</span>
-      <div class='borderBottomToolbar'></div>
+  <div class='createLetterPageContainerAndSideBlockMenu'>
+    <div class='createLetterPageContainer'>
+      <div class='navBar'>
+        <div class='btnBack'>
+          <img src='./Vector 4.png' alt='vector-left'>
+          <h3>Назад</h3>
+        </div>
+        <div class='deleteLetter'><p>Удалить письмо</p></div>
+      </div>
+      <div class='createLetterBlock '>
+        <div class='blockNaming fillingBlock'>
+          <p>Название блока</p>
+          <input class='blockNamingInput' placeholder='Автоматическое создание ЛК'>
+        </div>
+        <div class='titleNaming fillingBlock'>
+          <p>Название блока</p>
+          <input class='titleNamingInput' placeholder='После заказа создан ЛК, авторизируйтесь для отслеживания информации по вашему заказу'>
+        </div>
+        <div class='preheader fillingBlock'>
+          <p>Preheader</p>
+          <input class='preheaderInput' placeholder='Заполните данные а ЛК'>
+        </div>
+        <div class='textInLetter fillingBlock'>
+          <p>Подводка - текст в письме</p>
+          <textarea class='textInLetterTextarea'></textarea>
+        </div>
+        <div class='allUTM'>
+          <p>UTM</p>
+          <div class='UTMBlock'>
+            <div class='infoUTM'>
+              <p>utm_source=</p>
+              <input placeholder='Email_auto'>
+            </div>
+            <div class='infoUTM'>
+              <p>utm_medium=</p>
+              <input placeholder='email'>
+            </div>
+            <div class='infoUTM'>
+              <p>utm_campaign=</p>
+              <input placeholder='beta-pro-send'>
+            </div>
+            <div class='infoUTM'>
+              <p>utm_content=</p>
+              <input placeholder='{manager_name}'>
+            </div>
+            <div class='infoUTM'>
+              <p>utm_term=</p>
+              <input placeholder='{order_id}'>
+            </div>
+          </div>
+        </div>
+        <div class='mailingBackgroundBlock'>
+          <p>Фон рассылки</p>
+          <div class='settingsBackground'>
+            <input placeholder='#FFFFFF'>
+            <span class='applyBackgroundBtn'>Применить фон</span>
+            <span class='addImageBtn'>Добавить изображение</span>
+          </div>
+        </div>
+        <div class='creareBLockBtnAndSaveBlockBtnBlock'>
+          <div class='createBlockBtn'>Создать новый блок</div>
+          <div>
+            <div class='saveBlockBtn'>Сохранить письмо</div>
+            <div class='testLetter'>Отправить тестовое письмо</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class='blocksNav'>
+    <div class='sideBlockMenu'>
+      <h3>Блоки</h3>
       <div class='widget'>
         <p>Все</p>
         <p>&#8744;</p>
       </div>
-      <div class='blockCreatorBtn'>
-        <p>Создать блок</p>
-      </div>
-    </div>
-    <div class='blocks'>
-      <div class='textBlockLine demarcationLine'>
-        <span>Текстовые блоки</span>
-      </div>
+      <div class='textBlockLine demarcationLine'><p>Текстовые блоки</p></div>
       <div class='textBlocks blocksContainer'>
         <div class='textBlock block'>
           <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
+            <img class='plug' src='./image 7.png' alt='img'>
           </div>
           <div class='info'>
             <h3>Менеджер</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-              <li><a href='#'>оплата</a></li>
-              <li><a href='#'>Доставка</a></li>
-              <li><a href='#'>Трек-номер</a></li>
-              <li><a href='#'>Заберите ваш заказ</a></li>
-            </ul>
-            <div class='expand'>Развернуть</div>
+            <div class='expand'>
+              <p>Подробнее</p>
+              <img src='Vector 7.png' alt='vector7'>
+            </div>
           </div>
         </div>
         <div class='textBlock block'>
           <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
+            <img class='plug' src='./image 7.png' alt='img'>
           </div>
           <div class='info'>
             <h3>Приветствие</h3>
+            <div class='expand'>
+              <p>Свернуть</p>
+              <img src='Vector 7.png' alt='vector7'>
+            </div>
             <p>Блок используется в письмах:</p>
             <ul>
               <li><a href='#'>Заказ</a></li>
@@ -59,116 +112,40 @@
               <li><a href='#'>Нет модели в наличии</a></li>
             </ul>
             <p>Переменные в блоке(ссылки):</p>
-            <ul>
-              <li><a href='https://vk.com/kirilldoker'>Doker</a></li>
-            </ul>
+              <ul>
+                <li><a href='https://vk.com/kirilldoker'>Doker</a></li>
+              </ul>
           </div>
         </div>
-        <div class='textBlock block'>
-          <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
-          </div>
-          <div class='info'>
-            <h3>Менеджер</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-              <li><a href='#'>оплата</a></li>
-              <li><a href='#'>Доставка</a></li>
-              <li><a href='#'>Трек-номер</a></li>
-              <li><a href='#'>Заберите ваш заказ</a></li>
-            </ul>
-            <div class='expand'>Развернуть</div>
-          </div>
-        </div>  
       </div>
-      <div class='modelTableLine demarcationLine'>
-        <span>Таблица моделей</span>
-      </div>
+      <div class='modelTableLine  demarcationLine'><p>Таблица моделей</p></div>
       <div class='modelTables blocksContainer'>
-        <div class='modelTable block'>
+        <div class='modelTable  block'>
           <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
+            <img class='plug' src='./image 7.png' alt='img'>
           </div>
           <div class='info'>
-            <h3>Заказ</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-              <li><a href='#'>оплата</a></li>
-              <li><a href='#'>Доставка</a></li>
-              <li><a href='#'>Трек-номер</a></li>
-              <li><a href='#'>Заберите ваш заказ</a></li>
-            </ul>
-            <div class='expand'>Развернуть</div>
+            <h3>Менеджер</h3>
+            <div class='expand'>
+              <p>Подробнее</p>
+              <img src='Vector 7.png' alt='vector7'>
+            </div>
           </div>
         </div>
-        <div class='modelTable block'>
+        <div class='modelTable  block'>
           <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
+            <img class='plug' src='./image 7.png' alt='img'>
           </div>
           <div class='info'>
-            <h3>Оплата. Копия заказа</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-            </ul>
-            <p>Переменные в блоке(ссылки):</p>
-            <ul>
-              <li><a href='https://vk.com/kirilldoker'>Doker</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class='buttonBlocksLine demarcationLine'>
-        <span>Кнопки</span>
-      </div>
-      <div class='buttonBlocks blocksContainer'>
-        <div class='buttonBlock block'>
-          <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
-          </div>
-          <div class='info'>
-            <h3>Оплатить заказ</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-              <li><a href='#'>оплата</a></li>
-              <li><a href='#'>Доставка</a></li>
-              <li><a href='#'>Трек-номер</a></li>
-              <li><a href='#'>Заберите ваш заказ</a></li>
-            </ul>
-            <div class='expand'>Развернуть</div>
-          </div>
-        </div>
-        <div class='buttonBlock block'>
-          <div class='imgInfo'>
-            <img class='plug' src='./image 9.png' alt='img'>
-          </div>
-          <div class='info'>
-            <h3>Приветствие</h3>
-            <p>Блок используется в письмах:</p>
-            <ul>
-              <li><a href='#'>Заказ</a></li>
-              <li><a href='#'>Подтверждение заказа</a></li>
-              <li><a href='#'>Нет модели в наличии</a></li>
-            </ul>
-            <p>Переменные в блоке(ссылки):</p>
-            <ul>
-              <li><a href='https://vk.com/kirilldoker'>Doker</a></li>
-            </ul>
+            <h3>Менеджер</h3>
+            <div class='expand'>
+              <p>Подробнее</p>
+              <img src='Vector 7.png' alt='vector7'>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 </body>
 </html>

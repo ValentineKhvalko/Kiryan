@@ -7,155 +7,265 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.blockPageContainer {
-  padding: 30px 0 0 180px;
-}
-
-.toolbar {
+.createLetterPageContainerAndSideBlockMenu {
   display: flex;
-  width: 100%;
-  font-size: 24px;
+  justify-content: space-between;
   color: #464655;
 }
 
-.blocksPage {
-  font-weight: bold;
-  border-bottom: solid 7px #7D90B2;
-  padding: 5px 10px 5px 0; 
+.createLetterPageContainer {
+  margin: 30px 10vw;
+  flex: 1 0 auto;
 }
 
-.lettersPage {
-  border-bottom: solid 7px #F4F7FC;
-  padding: 5px 10px; 
-}
-
-.borderBottomToolbar {
-  border-bottom: solid 7px #F4F7FC;
-  width: 100%;
-}
-
-.blocksNav {
-  margin: 30px 0;
+.navBar {
   display: flex;
-  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnBack {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnBack img {
+  padding-right: 10px;
+  width: 7px;
+  height: 14px;
+}
+
+.deleteLetter {
+  text-decoration-line: underline;
+  color: #F13B3B;
+  cursor: pointer;
+}
+
+.createLetterBlock {
+  margin-top: 10px;
+}
+
+.fillingBlock p {
+  font-weight: bold;
+  padding: 35px 0 15px;
+}
+
+.fillingBlock input, .textInLetterTextarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background: #DAE1EC;
+  border-radius: 2px;
+  border: none;
+}
+
+.fillingBlock .textInLetterTextarea {
+  height: 170px;
+  resize: none;
+}
+
+.allUTM, .mailingBackgroundBlock{
+  margin-top: 25px;
+}
+
+.allUTM>p, .mailingBackgroundBlock>p {
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.UTMBlock {
+  padding: 20px;
+  background: #F4F7FC;
+  box-shadow: 0px 4px 6px rgba(125, 144, 178, 0.15);
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.infoUTM input {
+  margin-top: 10px;
+  background: #DAE1EC;
+  border-radius: 2px;
+  width: calc(100% - 30px);
+  padding: 10px 10px 10px 20px;
+  border: none;
+}
+
+.settingsBackground {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settingsBackground input {
+  padding: 10px;
+  background: #DAE1EC;
+  border-radius: 2px;
+  border: none;
+  flex-grow: 1;
+}
+
+.applyBackgroundBtn {
+  margin: 0 30px;
+  padding: 10px;
+  background: #31BE72;
+  color: #FFFFFF;
+  border-radius: 2px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.addImageBtn {
+  padding: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #606F89;
+  border-radius: 2px;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.creareBLockBtnAndSaveBlockBtnBlock {
+  padding: 100px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.createBlockBtn {
+  padding: 10px 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #464655;
+}
+
+.saveBlockBtn {
+  padding: 10px 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #31BE72;
+}
+
+.testLetter {
+  padding-top: 10px;
+  color: #464655;
+  text-align: right;
+  font-weight: normal;
+  text-decoration-line: underline;
+  cursor: pointer;  
+}
+
+.sideBlockMenu {
+  border-left: 1px solid #7D90B2;;
+  background: #F4F7FC;
+  padding: 30px 20px;
+  flex: 0 1 auto;
+}
+
+.sideBlockMenu>h3 {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .widget {
   display: flex;
-  padding: 10px 20px;
-  width: 20vw;
   justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
   border: 1px solid #606F89;
+  box-sizing: border-box;
   border-radius: 2px;
-}
-
-.blockCreatorBtn {
-  margin: 0 30px;
-  text-align: center;
-  padding: 10px 70px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #31BE72;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.blocks {
-  margin: 70px 0 0 0;
 }
 
 .demarcationLine {
-  display: flex;
-  width: 100%;
-  background-color:#F4F7FC;
-  border-radius: 2px;
-  margin: 60px 0 0;
-}
-
-.demarcationLine span {
+  padding: 10px;
+  text-align: center;
   font-size: 14px;
-  padding: 7px 50px;
-  border-radius: 2px;
   color: #FFFFFF;
+  border-radius: 2px;
 }
 
-.textBlockLine span {
-  background-color: #31BE72;
+.textBlockLine {
+  background: #31BE72;
 }
 
-.modelTableLine span {
-  background-color: #7D90B2;
-}
-
-.buttonBlocksLine span {
-  background-color: #ED0000;
-  padding: 10px 80px;
+.modelTableLine {
+  background: #7D90B2;
 }
 
 .blocksContainer {
-  margin: 0 130px 40px 0;
+  margin: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .block {
-  display: flex;
-  background: #F4F7FC;
-  box-shadow: 0px 4px 6px rgba(125, 144, 178, 0.15);
-  border-radius: 3px;
-  padding: 20px;
-  justify-content: space-evenly;
-  margin: 40px 30px 0 0;
+  max-width: 200px;
 }
 
 .imgInfo {
-  width: 250px;
-  height: 270px;
-  background-color: #FFFFFF;
+  height: 220px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  margin-right: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
   cursor: pointer;
+}
+
+.plug {
+  width: 180px;
 }
 
 .info h3 {
-  padding: 0 0 5px 0;
   font-weight: bold;
   font-size: 20px;
   color: #31BE72;
-}
-
-.info p {
-  padding: 5px 0;
-  font-weight: bold;
-  color: #464655;
-}
-
-.info li { 
-  list-style-position: inside;
-}
-
-.info li a {
-  color: #3B3A4A;
-  text-decoration: none;
-  line-height: 150%;
-}
-
-.info li a:hover {
-  color: #31BE72;
-  text-decoration: underline;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #DAE1EC;
 }
 
 .expand {
-  margin-top: 15px;
-  border-top: 2px solid #DAE1EC;
-  padding: 10px 0;
-  font-weight: bold;
-  color: #31BE72;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #606F89;
   cursor: pointer;
 }
 
+.expand img {
+  margin-left: 10px;
+  width: 10px;
+  height: 5px;
+}
 
+.info>p {
+  font-weight: bold;
+}
+
+.info ul {
+  padding: 10px 0;
+}
+
+.info ul li {
+  list-style-type: none;
+}
+
+.info li a {
+  text-decoration: none;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #3B3A4A;
+}
